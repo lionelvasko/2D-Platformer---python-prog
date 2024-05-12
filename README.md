@@ -8,7 +8,7 @@ This game features various levels, enemies, and interactive elements. The player
 
 ## Installation
 
-You can run this game on Windows with the .exe file (in the `dist` folder). The must packages are in the requirements.txt.
+You can run this game on Windows with the `2D Platformer.exe`. The must packages are in the requirements.txt.
 
 ## Usage
 
