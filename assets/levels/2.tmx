@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="24" height="30" tilewidth="64" tileheight="64" infinite="0" nextlayerid="14" nextobjectid="205">
+ <tileset firstgid="1" source="../tilesets/outside.tsx"/>
+ <tileset firstgid="49" source="../tilesets/items.tsx"/>
+ <tileset firstgid="54" source="../tilesets/inside.tsx"/>
+ <tileset firstgid="150" source="../tilesets/extra.tsx"/>
+ <tileset firstgid="216" name="objects" tilewidth="156" tileheight="186" tilecount="28" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="46" height="50" source="../../graphics/objects/barrel.png"/>
+  </tile>
+  <tile id="1">
+   <image width="128" height="128" source="../../graphics/objects/bg_palm_1.png"/>
+  </tile>
+  <tile id="2">
+   <image width="50" height="36" source="../../graphics/objects/crate.png"/>
+  </tile>
+  <tile id="3">
+   <image width="68" height="186" source="../../graphics/objects/flag.png"/>
+  </tile>
+  <tile id="4">
+   <image width="78" height="136" source="../../graphics/objects/large_1.png"/>
+  </tile>
+  <tile id="5">
+   <image width="156" height="44" source="../../graphics/objects/ship.png"/>
+  </tile>
+  <tile id="6">
+   <image width="80" height="103" source="../../graphics/objects/small_1.png"/>
+  </tile>
+  <tile id="7">
+   <image width="74" height="56" source="../../graphics/objects/player.png"/>
+  </tile>
+  <tile id="8">
+   <image width="76" height="46" source="../../graphics/objects/shell.png"/>
+  </tile>
+  <tile id="9">
+   <image width="48" height="46" source="../../graphics/objects/tooth.png"/>
+  </tile>
+  <tile id="10">
+   <image width="64" height="64" source="../../graphics/objects/floor_spikes.png"/>
+  </tile>
+  <tile id="11">
+   <image width="64" height="64" source="../../graphics/objects/spike_ball.png"/>
+  </tile>
+  <tile id="12">
+   <image width="104" height="106" source="../../graphics/objects/bg_palm_left.png"/>
+  </tile>
+  <tile id="13">
+   <image width="104" height="106" source="../../graphics/objects/bg_palm_right.png"/>
+  </tile>
+  <tile id="14">
+   <image width="42" height="32" source="../../graphics/objects/bg_crate.png"/>
+  </tile>
+  <tile id="15">
+   <image width="64" height="64" source="../../graphics/objects/candle.png"/>
+  </tile>
+  <tile id="16">
+   <image width="64" height="64" source="../../graphics/objects/window.png"/>
+  </tile>
+  <tile id="17">
+   <image width="64" height="116" source="../../graphics/objects/big_chain.png"/>
+  </tile>
+  <tile id="18">
+   <image width="64" height="62" source="../../graphics/objects/small_chain.png"/>
+  </tile>
+  <tile id="19">
+   <image width="14" height="34" source="../../graphics/objects/green_bottle1.png"/>
+  </tile>
+  <tile id="20">
+   <image width="30" height="14" source="../../graphics/objects/green_bottle2.png"/>
+  </tile>
+  <tile id="21">
+   <image width="14" height="28" source="../../graphics/objects/blue_bottle1.png"/>
+  </tile>
+  <tile id="22">
+   <image width="24" height="14" source="../../graphics/objects/blue_bottle2.png"/>
+  </tile>
+  <tile id="23">
+   <image width="42" height="44" source="../../graphics/objects/bg_barrel.png"/>
+  </tile>
+  <tile id="24">
+   <image width="42" height="44" source="../../graphics/objects/bg_barrel_2.png"/>
+  </tile>
+  <tile id="25">
+   <image width="52" height="178" source="../../graphics/objects/curtain1.png"/>
+  </tile>
+  <tile id="26">
+   <image width="52" height="178" source="../../graphics/objects/curtain2.png"/>
+  </tile>
+  <tile id="27">
+   <image width="82" height="98" source="../../graphics/objects/door.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="244" source="../tilesets/platforms.tsx"/>
+ <tileset firstgid="252" source="../tilesets/enemies.tsx"/>
+ <tileset firstgid="252" source="../tilesets/grass.tsx"/>
+ <tileset firstgid="257" source="../tilesets/objects.tsx"/>
+ <layer id="9" name="BG" width="24" height="30">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="12" name="BG details" class="window"/>
+ <layer id="1" name="Terrain" width="24" height="30">
+  <data encoding="csv">
+162,162,158,178,178,178,178,178,178,178,178,178,178,178,178,178,178,178,178,178,178,159,162,162,
+162,167,168,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,183,184,186,166,162,162,
+162,167,168,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,186,185,166,162,162,
+162,167,168,0,0,0,0,0,0,0,185,0,0,0,0,0,0,0,0,0,196,166,162,162,
+162,162,168,0,0,0,0,0,0,0,196,0,186,0,0,0,0,0,0,0,0,166,162,162,
+162,162,168,0,0,0,155,156,157,0,0,0,0,0,0,0,0,0,0,0,0,166,162,162,
+162,162,168,0,0,0,177,178,179,186,0,0,0,0,0,155,156,156,156,156,156,170,162,162,
+162,162,168,0,0,0,0,0,186,0,0,0,0,0,0,166,162,162,162,162,162,162,162,162,
+162,162,168,0,0,0,0,0,0,0,0,0,0,0,0,177,178,178,178,178,178,159,162,162,
+162,162,168,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,183,184,185,166,162,162,
+162,167,168,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,196,166,162,162,
+162,167,168,0,0,0,155,156,157,0,0,0,0,0,0,0,0,0,0,186,186,166,162,162,
+162,167,168,0,0,0,177,178,179,0,0,0,0,0,0,0,0,0,0,0,0,166,162,162,
+162,167,168,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,166,162,162,
+162,167,168,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,166,162,162,
+162,162,168,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,166,162,162,
+162,162,168,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,166,162,162,
+162,162,169,156,157,0,0,0,0,0,0,0,0,0,0,155,156,156,157,0,0,166,162,162,
+162,162,167,167,169,157,0,0,0,0,0,0,0,0,0,177,178,178,179,0,0,166,162,162,
+162,162,158,178,178,179,0,0,0,0,0,0,0,0,0,186,0,0,0,0,0,166,162,162,
+162,162,168,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,166,162,162,
+162,162,168,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,166,162,162,
+162,162,168,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,166,162,162,
+162,162,168,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,166,162,162,
+162,162,168,0,0,0,0,0,155,156,157,0,0,0,0,155,156,156,157,186,185,166,162,162,
+162,162,168,185,0,0,0,0,166,162,168,0,0,194,195,166,162,162,168,185,196,166,162,162,
+162,162,168,196,186,0,0,186,166,162,168,0,0,205,206,166,162,162,168,196,186,166,162,162,
+162,162,169,156,156,156,156,156,170,162,169,156,156,156,156,170,162,162,169,156,156,170,162,162,
+162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,
+162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162
+</data>
+ </layer>
+ <layer id="5" name="Platforms" width="24" height="30">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="10" name="FG" width="24" height="30">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="4" name="Objects">
+  <object id="4" name="flag" gid="219" x="1184" y="384" width="68" height="186"/>
+  <object id="15" name="player" gid="223" x="192" y="1536" width="74" height="56"/>
+  <object id="88" name="saw" x="448" y="1216" width="64" height="64">
+   <properties>
+    <property name="speed" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="89" name="saw" x="576" y="1152" width="64" height="64">
+   <properties>
+    <property name="speed" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="90" name="saw" x="1056" y="1452" width="64" height="64">
+   <properties>
+    <property name="speed" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="91" name="saw" x="832" y="1152" width="64" height="64">
+   <properties>
+    <property name="speed" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="134" name="saw" x="352" y="352" width="64" height="64">
+   <properties>
+    <property name="speed" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="135" name="saw" x="352" y="736" width="64" height="64">
+   <properties>
+    <property name="speed" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="140" name="saw" x="896" y="512" width="64" height="64">
+   <properties>
+    <property name="speed" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="141" name="saw" x="832" y="448" width="64" height="64">
+   <properties>
+    <property name="speed" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="142" name="saw" x="704" y="448" width="64" height="64">
+   <properties>
+    <property name="speed" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="143" name="saw" x="576" y="448" width="64" height="64">
+   <properties>
+    <property name="speed" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="178" name="saw" x="640" y="512" width="64" height="64">
+   <properties>
+    <property name="speed" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="179" name="saw" x="768" y="512" width="64" height="64">
+   <properties>
+    <property name="speed" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="189" name="floor_spike" gid="1073742050" x="960" y="640" width="64" height="64">
+   <properties>
+    <property name="inverted" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="190" name="floor_spike" gid="1073742050" x="1024" y="640" width="64" height="64">
+   <properties>
+    <property name="inverted" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="191" name="floor_spike" gid="1073742050" x="1088" y="640" width="64" height="64">
+   <properties>
+    <property name="inverted" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="192" name="floor_spike" gid="1073742050" x="512" y="576" width="64" height="64">
+   <properties>
+    <property name="inverted" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="193" name="floor_spike" gid="1073742050" x="640" y="384" width="64" height="64">
+   <properties>
+    <property name="inverted" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="194" name="saw" x="330" y="1474" width="64" height="64">
+   <properties>
+    <property name="speed" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="195" name="saw" x="704" y="1208" width="64" height="64">
+   <properties>
+    <property name="speed" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="197" name="saw" x="1278" y="958" width="64" height="64">
+   <properties>
+    <property name="speed" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="202" name="saw" x="1026" y="256" width="64" height="64">
+   <properties>
+    <property name="speed" type="int" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="13" name="Moving Objects">
+  <object id="81" name="spike" gid="227" x="576" y="1536" width="54" height="54">
+   <properties>
+    <property name="end_angle" type="int" value="360"/>
+    <property name="platform" type="bool" value="false"/>
+    <property name="radius" type="int" value="100"/>
+    <property name="speed" type="int" value="50"/>
+    <property name="start_angle" type="int" value="180"/>
+   </properties>
+  </object>
+  <object id="87" name="helicopter" x="384" y="1088" width="512" height="10">
+   <properties>
+    <property name="flip" type="bool" value="false"/>
+    <property name="platform" type="bool" value="true"/>
+    <property name="speed" type="int" value="60"/>
+   </properties>
+  </object>
+  <object id="133" name="saw" x="187" y="320" width="10" height="512">
+   <properties>
+    <property name="flip" type="bool" value="false"/>
+    <property name="platform" type="bool" value="false"/>
+    <property name="speed" type="int" value="100"/>
+   </properties>
+  </object>
+  <object id="137" name="spike" gid="227" x="192" y="128" width="54" height="54">
+   <properties>
+    <property name="end_angle" type="int" value="90"/>
+    <property name="platform" type="bool" value="false"/>
+    <property name="radius" type="int" value="100"/>
+    <property name="speed" type="int" value="50"/>
+    <property name="start_angle" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="139" name="helicopter" x="1024.5" y="681.5" width="10" height="320">
+   <properties>
+    <property name="flip" type="bool" value="false"/>
+    <property name="platform" type="bool" value="true"/>
+    <property name="speed" type="int" value="100"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="Items"/>
+ <objectgroup id="6" name="Enemies">
+  <object id="196" name="canon" gid="265" x="1242" y="1534" width="80" height="52">
+   <properties>
+    <property name="reverse" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="198" name="canon" gid="265" x="192" y="1088" width="80" height="52">
+   <properties>
+    <property name="reverse" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="199" name="canon" gid="265" x="1118" y="1086" width="80" height="52">
+   <properties>
+    <property name="reverse" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="200" name="canon" gid="265" x="1208" y="702" width="80" height="52">
+   <properties>
+    <property name="reverse" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="201" name="canon" gid="265" x="570" y="386" width="80" height="52">
+   <properties>
+    <property name="reverse" type="bool" value="true"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="2" name="Water"/>
+ <objectgroup id="8" name="Data">
+  <object id="28" name="Data" x="0" y="0" width="64" height="64">
+   <properties>
+    <property name="bg" value="Blue"/>
+    <property name="bottom_limit" type="int" value="200"/>
+    <property name="death_border_bottom" type="int" value="0"/>
+    <property name="horizon_line" type="int" value="600"/>
+    <property name="level_unlock" type="int" value="3"/>
+    <property name="top_limit" type="int" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,7 @@
+certifi==2024.2.2
+charset-normalizer==3.3.2
+idna==3.7
+pygame-ce==2.4.1
+PyTMX==3.32
+pytz==2024.1
+zope.interface==6.3

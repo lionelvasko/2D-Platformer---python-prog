@@ -1,0 +1,10 @@
+No file '..\graphics\enemies\saw\saw_chain.png' found in working directory 'C:\Projects\pygame'.Traceback (most recent call last):
+  File "c:\Projects\pygame\codes\main.py", line 150, in <module>
+    game = Game()
+  File "c:\Projects\pygame\codes\main.py", line 44, in __init__
+    self.import_assets()
+  File "c:\Projects\pygame\codes\main.py", line 91, in import_assets
+    'saw_chain': import_image('..', 'graphics', 'enemies', 'saw', 'saw_chain'),
+  File "c:\Projects\pygame\codes\support.py", line 9, in import_image
+    return pygame.image.load(full_path).convert_alpha() if alpha else pygame.image.load(full_path).convert()
+FileNotFoundError: No file '..\graphics\enemies\saw\saw_chain.png' found in working directory 'C:\Projects\pygame'.
